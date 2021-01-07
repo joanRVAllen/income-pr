@@ -16,17 +16,16 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Your Value Proposition
+            ## How high is your income?
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            All of us want to have high income. It begs the question, what affects income?
+            Is there anyting we can do to increase our income?
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            This app is for fun only
 
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Predict Income', color='primary'), href='/predictions')
     ],
     md=4,
 )
@@ -42,3 +41,12 @@ column2 = dbc.Col(
 )
 
 layout = dbc.Row([column1, column2])
+
+"""
+
+
+            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+
+            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+
+"""
